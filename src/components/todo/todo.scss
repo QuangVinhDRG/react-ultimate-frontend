@@ -1,0 +1,57 @@
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.todo-container {
+    margin-top: 50px;
+
+    .todo-title {
+        font-size: 30px;
+        color: red;
+        text-align: center;
+    }
+
+    .todo-new {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        input {
+            padding: 4px 16px;
+            outline: none;
+        }
+
+        button {
+            padding: 4px 16px;
+            cursor: pointer;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    .todo-data {
+        width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+
+        div {
+            padding: 4px 0;
+        }
+    }
+
+    .todo-image {
+        img {
+            display: flex;
+            margin: auto;
+            width: 100px;
+            animation: logoSpin infinite 20s linear;
+        }
+    }
+}
